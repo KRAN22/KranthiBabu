@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Scraping</title>
+</head>
+<body style="background-color: #F8F9F9">
+    <center>
+        <h1 style="  font-size: 40px;
+              color: black;
+              margin-top: 40px;
+              text-align: center;
+              text-shadow: 2px 4px red;">Welcome To The Web Scraping</h1>
+        <form method="post" >
+            {% csrf_token %}
+            <input type="text" name="YourUrl" style="width: 20%;
+                  margin: auto;
+                  border-color: blue;
+                  padding: 5px;
+                  font-size: 20px;
+                  color: brown;
+                  margin-bottom: 20px;
+                  text-align: center;"><br>
+            <input type="submit" style=" width: 10%;
+                          margin: auto;
+                          padding: 5px;
+                          font-size: 20px;
+                          background-color: black;
+                          color: blue;
+                          border-radius: 16px;
+                          border-color: black;
+                          margin-bottom: 30px;" >
+        </form>
+        </center>
+        <div style="color: blue">{{html|safe}}</div>
+</body>
+</html>
